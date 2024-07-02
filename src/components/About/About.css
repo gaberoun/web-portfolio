@@ -1,0 +1,47 @@
+#about {
+  max-width: 1200px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+#skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-block: 1rem;
+}
+
+.heading {
+  display: flex;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.2em;
+}
+
+#tools-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.6em;
+}
+
+.tool {
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  padding: 0.4em 0.7em;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  h4 {
+    font-size: 1em;
+  }
+}

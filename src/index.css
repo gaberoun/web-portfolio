@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --background: #1A1A1D;
+  --container: #222222;
+  --footer: black;
+  --text: #F9F6EE;
+  --primary: #FFAA1D;
+  --secondary: #FF1D72;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+#paper-overlay {
+  position: fixed;
+  background: url('https://img.freepik.com/premium-photo/grunge-grain-texture-overlay-design-background_27550-476.jpg');
+  mix-blend-mode: overlay;
+  opacity: 70%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+section {
+  min-height: calc(100vh - 7rem);
+  padding: 5rem;
+  display: grid;
+  margin-bottom: 8rem;
+}
+
+nav {
+  width: 100%;
+  position: sticky;
+  z-index: 2;
+  padding-block: 1rem;
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 5rem;
+}
+
+.nav-link{
+  display: block;
+  position: relative;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.nav-link:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2.5px solid var(--secondary);
+  transition: 500ms;
+  transform: scaleX(0);
+  padding-bottom: 1.4rem;
+  z-index: -1;
+}
+
+.nav-link:hover:before{
+  transition: transform 0.5s;
+  transform: scaleX(1);
+}
+
+ul, a {
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+button {
+  background-color: var(--primary);
+  border: 2px solid var(--footer);
+  border-radius: 30px;
+  box-shadow: var(--footer) 4px 4px 0 0;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0 1.5rem;
+  line-height: 2rem;
+  transition-duration: 500ms;
+  text-transform: uppercase;
+  margin-block: 2.5rem;
+}
+
+button:hover {
+  filter: brightness(0.5);
+}
+
+h3 {
+  font-size: 1.8em;
+  font-family: 'Lora', serif;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 1rem;
+  }
+
+  ul {
+    justify-content: space-evenly;
+    margin-right: 0;
+  }
+
+  body {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,61 @@
+h1 {
+  font-size: 5em;
+  color: var(--primary);
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Lora', serif;
+}
+
+#home-contacts {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  left: 5rem;
+  bottom: 4rem;
+  font-size: 0.9rem;
+}
+
+#title {
+  align-self: center;
+}
+
+.home-contact {
+  border-left: 1px solid var(--text);
+  padding: 0.3rem 1rem;
+  color: var(--secondary);
+}
+
+#home-links {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  right: 5rem;
+  bottom: 4rem;
+  gap: 0.2rem;
+  font-size: 1.4rem;
+}
+
+.home-link:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  #home-contacts {
+    display: flex;
+    left: 1rem;
+    bottom: 1rem;
+    flex-flow: column;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  #home-links {
+    display: flex;
+    flex-flow: column;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}

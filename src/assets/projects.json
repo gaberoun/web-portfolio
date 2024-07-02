@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Pet Adoption",
+    "link": "https://pet-adoption-opal.vercel.app/",
+    "description": "A full-stack application that uses REST api and browser routing",
+    "repo": "https://github.com/gaberoun/pet-adoption",
+    "tech": ["MongoDB", "Express", "ReactJS", "NodeJs", "Tailwind"]
+  },
+  {
+    "name": "SunnySideApp",
+    "link": "https://sunnnysideapp.netlify.app/",
+    "description": "A vanilla JavaScript weather application built with OpenWeather API",
+    "repo": "https://github.com/gaberoun/weather-app",
+    "tech": ["JavaScript", "HTML", "CSS"]
+  },
+  {
+    "name": "Kyusikleta",
+    "link": "https://kyusikleta.netlify.app/",
+    "description": "A react bike rental application that showcases routing, filtering, and form handling",
+    "repo": "https://github.com/gaberoun/bike-rental",
+    "tech": ["ReactJS", "Tailwind"]
+  },
+  {
+    "name": "Pokedex",
+    "link": "https://lovely-griffin-95f39e.netlify.app/",
+    "description": "A react replication of a pokedex built with PokeAPI",
+    "repo": "https://github.com/gaberoun/react-pokedex",
+    "tech": ["ReactJS", "CSS"]
+  },
+  {
+    "name": "AI Chatbot",
+    "description": "Uses the Gemini Pro generative model for multi-turn conversations",
+    "link": "https://delightful-lolly-aebd5a.netlify.app/",
+    "repo": "https://github.com/gaberoun/ai-chatbot",
+    "tech": ["JavaScript", "HTML", "Tailwind"]
+  },
+  {
+    "name": "Random Joke Generator",
+    "description": "Fetches from official-joke-api and displays the response to the user.",
+    "link": "https://splendid-cupcake-c89c07.netlify.app/",
+    "repo": "https://github.com/gaberoun/random-joke",
+    "tech": ["ReactTS", "CSS"]
+  },
+  {
+    "name": "JavaScript Calculator",
+    "link": "https://rococo-sprite-d51270.netlify.app/",
+    "repo": "https://github.com/gaberoun/FCC-Js-Calculator",
+    "tech": ["ReactTS", "CSS"]
+  },
+  {
+    "name": "Todo List",
+    "description": "A simple app where you can create, edit, mark, and delete a task.",
+    "link": "https://symphonious-granita-79430e.netlify.app/",
+    "repo": "https://github.com/gaberoun/react-todo",
+    "tech": ["ReactTS", "Bootstrap"]
+  },
+  {
+    "name": "Drum Machine",
+    "link": "https://github.com/gaberoun/FCC-Drum-Machine",
+    "repo": "https://hilarious-unicorn-470cbe.netlify.app/",
+    "tech": ["ReactTS", "CSS"]
+  },
+  {
+    "name": "25 + 5 Clock",
+    "link": "https://hilarious-unicorn-470cbe.netlify.app/",
+    "repo": "https://github.com/gaberoun/FCC-25-5-Clock",
+    "tech": ["ReactTS", "CSS"]
+  },
+  {
+    "name": "Markdown Previewer",
+    "link": "transcendent-flan-e240d6.netlify.app/",
+    "repo": "https://github.com/gaberoun/FCC-Markdown-Previewer",
+    "tech": ["ReactTS", "CSS"]
+  }
+]
