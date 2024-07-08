@@ -1,8 +1,6 @@
 import Headroom from 'react-headroom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-// Add Framer motion
-
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
 import Featured from "../components/Featured/Featured";
@@ -22,6 +20,7 @@ export default function Layout() {
 
       <Headroom>
         <nav>
+          <AnchorLink href='#home' id="home-button">GA</AnchorLink>
           <ul>
             {navigation.map((link) => (
               <li key={link.name}>

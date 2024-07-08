@@ -45,21 +45,28 @@ section {
   padding: 5rem;
   display: grid;
   margin-bottom: 8rem;
+  margin-inline: auto;
 }
 
 nav {
   width: 100%;
   position: sticky;
   z-index: 2;
-  padding-block: 1rem;
+  padding: 2.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home-button {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Lora', serif;
 }
 
 ul {
   display: flex;
-  justify-content: end;
-  align-items: center;
   gap: 3rem;
-  margin-right: 5rem;
 }
 
 .nav-link{
@@ -113,12 +120,13 @@ button {
 }
 
 button:hover {
-  filter: brightness(0.5);
+  transform: translateY(3px);
 }
 
 h3 {
   font-size: 1.8em;
   font-family: 'Lora', serif;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -126,9 +134,12 @@ h3 {
     padding: 1rem;
   }
 
+  nav {
+    padding: 1rem;
+  }
+
   ul {
     justify-content: space-evenly;
-    margin-right: 0;
   }
 
   body {

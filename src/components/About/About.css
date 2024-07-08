@@ -44,4 +44,9 @@ h4 {
   h4 {
     font-size: 1em;
   }
+
+  #skills-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
