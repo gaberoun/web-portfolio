@@ -17,6 +17,26 @@ export default function Featured() {
     setPreview({...filtered[0]});
   }
 
+  const projectSection = (          
+    <div className="section">
+      {projects.slice(0,6).map((project) => (
+        <div 
+          className="featured" 
+          onClick={() => previewProject(project.name)}
+          key={project.name}
+        >
+          <img src={`/${project.name}.png`} alt={`${project.name} image`} />
+          <h5>{project.name}</h5>
+          <div className="stack">
+            {project.tech.map((stack) => (
+              <p key={stack} className="tech">{stack}</p>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <section id="featured">
       <div id="heading">
@@ -25,40 +45,8 @@ export default function Featured() {
       </div>
       <div className="scroller">
         <div id="featured-container" className="inner-scroller">
-          <div className="section">
-          {projects.slice(0,6).map((project) => (
-            <div 
-              className="featured" 
-              onClick={() => previewProject(project.name)}
-              key={project.name}
-            >
-              <img src={`/${project.name}.png`} />
-              <h5>{project.name}</h5>
-              <div className="stack">
-                {project.tech.map((stack) => (
-                  <p key={stack} className="tech">{stack}</p>
-                ))}
-              </div>
-            </div>
-          ))}
-          </div>
-          <div className="section">
-          {projects.slice(0,6).map((project) => (
-            <div 
-              className="featured" 
-              onClick={() => previewProject(project.name)}
-              key={project.name}
-            >
-              <img src={`/${project.name}.png`} />
-              <h5>{project.name}</h5>
-              <div className="stack">
-                {project.tech.map((stack) => (
-                  <p key={stack} className="tech">{stack}</p>
-                ))}
-              </div>
-            </div>
-          ))}
-          </div>
+          {projectSection}
+          {projectSection}
         </div>
       </div>
       

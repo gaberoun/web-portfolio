@@ -2,7 +2,7 @@
   {
     "name": "Pet Adoption",
     "link": "https://pet-adoption-opal.vercel.app/",
-    "description": "A full-stack application that uses REST api and browser routing",
+    "description": "A full-stack MERN application that uses REST api and browser routing",
     "repo": "https://github.com/gaberoun/pet-adoption",
     "tech": ["MongoDB", "Express", "ReactJS", "NodeJs", "Tailwind"]
   },
@@ -43,6 +43,7 @@
   },
   {
     "name": "JavaScript Calculator",
+    "description": "A simple calculator built with JavaScript.",
     "link": "https://rococo-sprite-d51270.netlify.app/",
     "repo": "https://github.com/gaberoun/FCC-Js-Calculator",
     "tech": ["ReactTS", "CSS"]

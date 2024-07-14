@@ -1,6 +1,7 @@
 import Rating from "@mui/material/Rating";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faDatabase, faTerminal, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import ResumeFile from "../../assets/Resume_Aguilar.pdf";
 import "./About.css";
 
 const skills = [
@@ -8,12 +9,13 @@ const skills = [
     key: "heading1",
     heading: "Front-end development", 
     icon: {...faCode},
+    alt: "code-icon",
     skill: [
       {name: "HTML5", years: 2, rating: 5},
       {name: "CSS", years: 2, rating: 5},
       {name: "Tailwind", years: 1, rating: 4.5},
       {name: "Bootstrap", years: 1, rating: 4},
-      {name: "JavaScript", years: 1, rating: 4.5},
+      {name: "JavaScript/TypeScript", years: 1, rating: 4.5},
       {name: "React", years: 1, rating: 4.5}
     ]
   },
@@ -21,6 +23,7 @@ const skills = [
     key: "heading2",
     heading: "Database Management", 
     icon: {...faDatabase},
+    alt: "database-icon",
     skill: [
       {name: "PostgreSQL", years: 1, rating: 4},
       {name: "MongoDB", years: 1, rating: 5},
@@ -30,6 +33,7 @@ const skills = [
     key: "heading3",
     heading: "Back-end Development", 
     icon: {...faFileCode},
+    alt: "file-icon",
     skill: [
       {name: "Node", years: 1, rating: 3.5},
       {name: "Express", years: 1, rating: 4},
@@ -39,11 +43,11 @@ const skills = [
     key: "heading4",
     heading: "Other Programming Languages", 
     icon: {...faTerminal},
+    alt: "terminal-icon",
     skill: [
       {name: "Python", years: 2, rating: 4},
       {name: "C#", years: 1, rating: 3},
       {name: "Java", years: 1, rating: 4},
-      {name: "TypeScript", years: 1, rating: 4}
     ]
   }
 ];
@@ -57,10 +61,9 @@ export default function About() {
       <div>
         <h3>About Me</h3>
         <p>I am Patricia Marie Aguilar, a materials engineering graduate of University of the Philippines Diliman. I have been working as a Software Support Analyst but 
-        I am currently looking for opportunities to become a full-stack web developer.
+        I am currently looking for opportunities to become a Full-Stack Web Developer.
         </p>
       </div> 
-      <button><a href="https://pmaguilar.hashnode.dev/about-me" target="_blank">View Blog</a></button>
 
       <div>
         <h3>Skills and Tools</h3>
@@ -68,7 +71,7 @@ export default function About() {
           {skills.map((entry) => (
             <div className="skill" key={entry.key}>
               <div className="heading">
-                <FontAwesomeIcon icon={entry.icon} />
+                <FontAwesomeIcon icon={entry.icon} alt={entry.alt} />
                 <h4>{entry.heading}</h4>
               </div>
               {entry.skill.map((item) => (
@@ -97,7 +100,7 @@ export default function About() {
         </div>
       </div>
       <button>
-        <a href="./assets/Resume-2024.pdf" download target="_blank">View Resume</a>
+        <a href={ResumeFile} download="Resume_Aguilar" target="_blank">View Resume</a>
       </button>
     </section>
   )

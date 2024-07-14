@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faSquareXTwitter, faSquareFacebook, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { ReactTyped } from "react-typed";
 import "./Home.css";
 
 const contacts = [
@@ -20,7 +21,7 @@ export default function Home() {
   return (
     <section id="home">
       <div id="title">
-        <h1 className="text-primary">Hi! I am Gabe.</h1>
+        <h1 className="text-primary">{">"} Hi! I{" "}<ReactTyped strings={["am Gabe."]} typeSpeed={200} /></h1>
         <h2>Full-stack web developer</h2>
       </div>
       <div id="home-contacts">
