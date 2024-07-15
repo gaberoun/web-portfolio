@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <div id="home-links">
         {links.map((link) => (
-          <a href={link.href} key={link.name} className="home-link">
+          <a href={link.href} target="_blank" key={link.name} className="home-link">
             <FontAwesomeIcon icon={link.icon} />
           </a>
         ))}

@@ -29,6 +29,13 @@ footer {
   }
   
   #footer-contacts {
-    font-size: 0.7rem;
-  }  
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+
+  #footer-contacts > div, #footer-contacts > div > a {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
 }
