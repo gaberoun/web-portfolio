@@ -12,7 +12,7 @@ const contacts = [
 
 const links = [
   {name: "LinkedIn", href: "https://www.linkedin.com/in/pm-aguilar/", icon: {...faLinkedin}},
-  {name: "Github", href: "https://www.linkedin.com/in/pm-aguilar/", icon: {...faSquareGithub}},
+  {name: "Github", href: "https://github.com/gaberoun", icon: {...faSquareGithub}},
   {name: "Email", href: "mailto:pmaguilar@alum.up.edu.ph", icon: {...faEnvelope}}
 ];
 
