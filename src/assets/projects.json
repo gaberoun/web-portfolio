@@ -7,6 +7,13 @@
     "tech": ["MongoDB", "Express", "ReactJS", "NodeJs", "Tailwind"]
   },
   {
+    "name": "PeraShare",
+    "link": "https://kkb-app.vercel.app/",
+    "description": "A full-stack MERN application used to manage expenses within a group",
+    "repo": "https://github.com/gaberoun/kkb-app",
+    "tech": ["MongoDB", "Express", "ReactJS", "NodeJs", "Tailwind"]
+  },
+  {
     "name": "SunnySideApp",
     "link": "https://sunnnysideapp.netlify.app/",
     "description": "A vanilla JavaScript weather application built with OpenWeather API",
