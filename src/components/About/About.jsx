@@ -11,12 +11,12 @@ const skills = [
     icon: {...faCode},
     alt: "code-icon",
     skill: [
-      {name: "HTML5", years: 2, rating: 5},
-      {name: "CSS", years: 2, rating: 5},
-      {name: "Tailwind", years: 1, rating: 4.5},
-      {name: "Bootstrap", years: 1, rating: 4},
-      {name: "JavaScript/TypeScript", years: 1, rating: 4.5},
-      {name: "React", years: 1, rating: 4.5}
+      {name: "HTML5", years: 3, rating: 5},
+      {name: "CSS", years: 3, rating: 5},
+      {name: "Tailwind/Bootstrap", years: 3, rating: 5},
+      {name: "JavaScript/TypeScript", years: 3, rating: 4.5},
+      {name: "React", years: 2-3, rating: 4},
+      {name: "Angular", years: 1-2, rating: 4}
     ]
   },
   {
@@ -25,8 +25,8 @@ const skills = [
     icon: {...faDatabase},
     alt: "database-icon",
     skill: [
-      {name: "PostgreSQL", years: 1, rating: 4},
-      {name: "MongoDB", years: 1, rating: 5},
+      {name: "MySQL", years: 1-2, rating: 4.5},
+      {name: "MongoDB", years: 1-2, rating: 5},
     ]
   },
   {
@@ -35,8 +35,9 @@ const skills = [
     icon: {...faFileCode},
     alt: "file-icon",
     skill: [
-      {name: "Node", years: 1, rating: 3.5},
-      {name: "Express", years: 1, rating: 4},
+      {name: "Node", years: 1-2, rating: 3.5},
+      {name: "Express", years: 1-2, rating: 4},
+      {name: "Spring", years: 0-1, rating: 4},
     ]
   },
   {
@@ -45,14 +46,14 @@ const skills = [
     icon: {...faTerminal},
     alt: "terminal-icon",
     skill: [
-      {name: "Python", years: 2, rating: 4},
-      {name: "C#", years: 1, rating: 3},
-      {name: "Java", years: 1, rating: 4},
+      {name: "Python", years: 1-2, rating: 3},
+      {name: "C#", years: 0-1, rating: 3},
+      {name: "Java", years: 1-2, rating: 4.5},
     ]
   }
 ];
 
-const tools = ["Git Version Control", "REST API", "Microsoft 365", "Google Suite", "Adobe Photoshop", "ASP.NET"];
+const tools = ["Git Version Control", "REST API", "Microsoft 365", "Google Suite", "Adobe Photoshop", "Test Automation"];
 
 export default function About() {
 
@@ -60,8 +61,8 @@ export default function About() {
     <section id="about">
       <div>
         <h3>About Me</h3>
-        <p>I am Patricia Marie Aguilar, a materials engineering graduate of University of the Philippines Diliman. I have been working as a Software Support Analyst but 
-        I am currently looking for opportunities to become a Full-Stack Web Developer.
+        <p>I am Patricia Marie Aguilar, a materials engineering graduate of University of the Philippines Diliman. I have been working as a QA Tester but 
+        I am open to opportunities for Web Developer or Software Engineer roles.
         </p>
       </div> 
 

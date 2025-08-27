@@ -6,7 +6,7 @@ import "./Home.css";
 
 const contacts = [
   {name: "Email", detail: "pmaguilar@alum.up.edu.ph"},
-  {name: "Phone", detail: "+63 998 530 5654"},
+  {name: "Phone", detail: "+63 927 702 6139"},
   {name: "Location", detail: "Quezon City, NCR"}
 ];
 
